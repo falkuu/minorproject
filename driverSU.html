@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Sign-Up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(253, 248, 248, 0.762);
+            font-family: 'General Sans';
+        }
+
+        .DSUform{
+            width: 100%;
+            padding: 15% 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            gap: 30px;
+        }
+
+        /* #heading{
+            display: flex;
+        } */
+
+        h1{
+            color: rgb(3, 0, 0);
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        #heading img{
+            width: 180px;
+        }
+
+        #name,#phoneNo,#btn{
+            height: 50px;
+            width: 300px;
+            border-radius: 3cqh;
+            text-align: center;
+        }
+
+        #btn{
+            background-color: rgb(237, 95, 95);
+            font-size: 1.3em;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="DSUform">
+        <div id="heading">
+            <!-- <h1>MediRapid</h1>
+            <img src="imgs/ambulance (1).png" alt=""> -->
+            <img src="imgs/medirap.jpg" alt="">
+            <!-- <h1>Sign-Up as Driver</h1> -->
+        </div>
+        <form action="">
+            <h1>Sign-Up as Driver</h1>
+            <br>
+            <!-- <label for="phoneNo">Phone Number</label> -->
+            <input type="text" name="name" id="name" placeholder="Enter Full Name">
+            <!-- <br>
+            <br>
+            <input type="email" name="e-mail" id="email" placeholder="E-Mail">
+            <br>
+            <br>
+            <input type="password" name="pswd" id="pswrd" placeholder="Password">
+            <br>
+            <br>
+            <input type="password" name="pswd" id="pswrd" placeholder="Repeat Password"> -->
+            <br>
+            <br>
+            <label for="license">Do you have a Driving License</label>
+            <br><br>
+            <input type="radio" name="license" id="yes">
+            <label for="yes">YES</label>
+            <input type="radio" name="license" id="no">
+            <label for="no">NO</label>
+            <!-- <br>
+            <input type="image" src="" alt=""> -->
+            <br><br>
+            <input type="number" name="phoneNo" id="phoneNo" placeholder="Phone Number">
+            <br>
+            <br>
+            <input type="button" value="Submit" id="btn">
+        </form>
+    </div>
+</body>
+</html>

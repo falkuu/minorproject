@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(253, 248, 248, 0.762);
+            font-family: 'General Sans';
+        }
+
+        .SUform{
+            width: 100%;
+            padding: 15% 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            gap: 30px;
+        }
+
+        /* #heading{
+            display: flex;
+        }
+
+        #heading h1{
+            color: rgb(240, 17, 17);
+            font-size: 3em;
+            font-weight: 900;
+        } */
+
+        #heading img{
+            width: 180px;
+        }
+
+        input{
+            height: 50px;
+            width: 300px;
+        }
+
+        #btn{
+            background-color: rgb(237, 95, 95);
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="SUform">
+        <div id="heading">
+            <!-- <h1>MediRapid</h1>
+            <img src="imgs/ambulance (1).png" alt=""> -->
+            <img src="imgs/medirap.jpg" alt="">
+        </div>
+        <form action="">
+            <!-- <label for="phoneNo">Phone Number</label> -->
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <br>
+            <br>
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <br>
+            <br>
+            <input type="email" name="e-mail" id="email" placeholder="E-Mail">
+            <br>
+            <br>
+            <input type="password" name="pswd" id="pswrd" placeholder="Password">
+            <br>
+            <br>
+            <input type="password" name="pswd" id="pswrd" placeholder="Repeat Password">
+            <br>
+            <br>
+            <input type="number" name="phoneNo" id="phoneNo." placeholder="Phone Number">
+            <br>
+            <br>
+            <input type="button" value="Sign Up" id="btn">
+        </form>
+    </div>
+</body>
+</html>

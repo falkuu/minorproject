@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Booking</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'General Sans';
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        .info h1{
+            font-family: 'General Sans Medium';
+            font-weight: 900;
+            font-size: 3em;
+            color: red;
+        }
+        #map{
+            width: 80%;
+            height: 50%;
+        }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+
+        .emerType{
+            width: 80%;
+            justify-content: start;
+        }
+
+        /* .emerType h4 */
+
+        .emerType label{
+            font-size: 1.5em;
+        }
+
+        #btn{
+            height: 50px;
+            width: 300px;
+            background-color: rgb(237, 95, 95);
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Ambulance booking</h1>
+        <br>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14656.624874669904!2d77.38984900000001!3d23.310090149999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1699190551055!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <br><br>
+        <div class="emerType">
+            <h2>Please select Type of emergency</h2>
+            <br>
+            <input type="radio" name="emergency" id="CardiacA">
+            <label for="CardiacA">Cardiac Arrest</label>
+            <br>
+            <input type="radio" name="emergency" id="accident">
+            <label for="accident">Accident</label>
+            <br>
+            <input type="radio" name="emergency" id="asthmaA">
+            <label for="asthmaA">Asthma Attack</label>
+            <br>
+            <input type="radio" name="emergency" id="seizures">
+            <label for="seizures">Seizures</label>
+            <br>
+            <input type="radio" name="emergency" id="anaphylaxis">
+            <label for="anaphylaxis">Anaphylaxis</label>
+            <br>
+            <input type="radio" name="emergency" id="hypoglycemia">
+            <label for="hypoglycemia">Hypoglycemia</label>
+            <br>
+            <input type="radio" name="emergency" id="others">
+            <!-- <label for="others">others</label> -->
+            <input type="text" placeholder="Others" id="othrs">
+        </div>
+        <br><br><br>
+        <input type="button" value="Book Now" id="btn">
+        <br><br><br>
+    </div>
+
+    
+
+</body>
+</html>
